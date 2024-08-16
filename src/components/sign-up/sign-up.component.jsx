@@ -27,7 +27,7 @@ const SignUp = () => {
     event.preventDefault();
 
     if (password !== confirmPassword) {
-      alert('Passwords do not match');
+      alert('Passwords does not match');
       return;
     }
 
@@ -36,7 +36,6 @@ const SignUp = () => {
         email,
         password
       );
-
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
       alert('User signed up successfully');
